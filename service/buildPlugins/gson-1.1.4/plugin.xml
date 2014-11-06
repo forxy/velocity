@@ -1,0 +1,25 @@
+<plugin name='gson' version='1.1.4' grailsVersion='2.0 &gt; *'>
+  <author>Rob Fletcher</author>
+  <authorEmail>rob@freeside.co</authorEmail>
+  <title>Gson Plugin</title>
+  <description>Provides alternate JSON (de)serialization using Google's Gson library</description>
+  <documentation>http://git.io/grails-gson</documentation>
+  <type>GsonGrailsPlugin</type>
+  <resources />
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='joda-time' name='joda-time' version='2.1' />
+      <dependency group='org.spockframework' name='spock-grails-support' version='0.7-groovy-2.0' />
+    </test>
+    <compile>
+      <dependency group='com.google.code.gson' name='gson' version='2.2.2' />
+    </compile>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

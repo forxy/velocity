@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:2.1.0"
+    }
+}
+
+apply plugin: "grails"
+
+repositories {
+    grails.central() //creates a maven repo for the Grails Central repository (Core libraries and plugins)
+}
+
+grails {
+    grailsVersion = '2.4.3'
+    groovyVersion = '2.3.6'
+    //springLoadedVersion '1.1.5'
+}
+
+dependencies {
+    compile project(":velocity.api")
+    bootstrap "org.grails.plugins:tomcat:7.0.54"
+    compile 'commons-beanutils:commons-beanutils:1.9.2'
+    compile 'org.codehaus.gpars:gpars:1.2.1'
+    compile 'org.grails.plugins:mongodb:3.0.2'
+    compile 'org.grails.plugins:redis:1.5.5'
+    compile 'org.grails.plugins:quartz:1.0.2'
+    compile 'org.grails.plugins:joda-time:1.5'
+    compile 'org.grails.plugins:gson:1.1.4'
+}

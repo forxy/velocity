@@ -1,0 +1,6 @@
+apply plugin: 'groovy'
+
+dependencies {
+    // --------------------- FORXY ---------------------------------------
+    //compile "fraud:common.rest.api:${rev_fraud_common}"
+}
