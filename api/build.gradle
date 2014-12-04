@@ -1,5 +1,7 @@
 apply plugin: 'groovy'
 
+jar { from sourceSets.main.allSource }
+
 dependencies {
     // --------------------- FORXY ---------------------------------------
     //compile "fraud:common.rest.api:${rev_fraud_common}"

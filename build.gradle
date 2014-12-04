@@ -5,8 +5,8 @@ subprojects {
 
     repositories {
         jcenter()
-        ivy { url "file://$System.env.OUTPUT_ROOT/deliverables/" }
-        uploadArchives { repositories { ivy { url "file://$System.env.OUTPUT_ROOT/deliverables/" } } }
+        maven { url "file://$System.env.OUTPUT_ROOT/deliverables/" }
+        uploadArchives { repositories { maven { url "file://$System.env.OUTPUT_ROOT/deliverables/" } } }
     }
 
     if (System.env.OUTPUT_ROOT) {

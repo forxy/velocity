@@ -33,7 +33,8 @@ task funcTest(type: Test, dependsOn: funcTestClasses) {
     //testLogging.showStandardStreams = true
     scanForTestClasses = false
 }
-jar { from sourceSets.main.allJava }
+
+jar { from sourceSets.main.allSource }
 
 // ========== Dependencies ==============================================
 
