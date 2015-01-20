@@ -281,3 +281,4 @@ app/bower_components
 
 # "temporary" build files
 /service/target
+/service/buildPlugins
