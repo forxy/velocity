@@ -41,5 +41,5 @@ jar { from sourceSets.main.allSource }
 dependencies {
     // --------------------- FORXY ---------------------------------------
     compile project(":velocity.api")
-    //compile "fraud:common.rest:${rev_fraud_common}"
+    //compile "fraud:common.rest:$rev_fraud_common"
 }
